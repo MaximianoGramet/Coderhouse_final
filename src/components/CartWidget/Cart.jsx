@@ -6,12 +6,13 @@ import { useCartContext } from '../context/CartContext';
 
 
 function Cart(){
+  const {cantidadTotal} = useCartContext()
   return(
     <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end' >
           <Navbar.Text>
           <img src={carrito} width='32px' height='32px'/>
           </Navbar.Text>
-          <p  className='text-light ps-3 pt-3'></p>
+          {cantidadTotal()}
         </Navbar.Collapse>
   )
 }

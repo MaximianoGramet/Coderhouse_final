@@ -22,13 +22,6 @@ export const CartContextProvider = ({ children }) => {
         ])
     }
 }
-
-        // setCartList([
-        //     ...cartList,
-        //     producto
-        // ])            
-
-
   
    const eliminarProducto = (pid) => setCartList(cartList.filter(prod => prod.id !== pid))
    const cantidadTotal = ()=> cartList.reduce((cantidadTotal, objProduct)=> cantidadTotal += objProduct.quantity ,0)
