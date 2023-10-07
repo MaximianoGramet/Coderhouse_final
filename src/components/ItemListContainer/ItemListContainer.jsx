@@ -11,23 +11,6 @@ const ItemListContainer = () => {
   const [ loading, setLoading ] = useState(true)
   const {cid} = useParams()
   
-  // useEffect(()=>{
-  //   if(cid){
-  //     mFetch()
-  //     .then(respuesta => setProduct(respuesta.filter(product=>cid==product.category)))
-  //     .catch(err => console.log(err))
-  //     .finally(()=> setLoading(false))
-
-  //   }else{
-  //     mFetch()
-  //     .then(respuesta => setProduct(respuesta))
-  //     .catch(err => console.log(err))
-  //     .finally(()=> setLoading(false))
-  //   }
-  // }, [cid])
-
-  //firebase desde acá
- 
   useEffect(()=>{
   if(cid){
     const db = getFirestore();
@@ -49,7 +32,6 @@ const ItemListContainer = () => {
 
 }, [cid])
 
-  //aterior a firebase
   return (
     <div className="d-flex justify-content-center">
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 container g-3 m-3">

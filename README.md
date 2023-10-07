@@ -9,6 +9,6 @@ Las librerias fueron las basicas bootstrap y firebase, evite el uso de otras par
     "bootstrap": "^5.3.1",
     "firebase": "^10.4.0",
 
-    Link de la grabación: 
+    Link de la grabación: https://drive.google.com/file/d/1n-w1bpaXViyDzd_cpW5AOGn9mkrfF85J/view?usp=drive_link
 
 Muchas gracias por su esfuerzo!!

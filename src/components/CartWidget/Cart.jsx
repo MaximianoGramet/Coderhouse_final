@@ -3,8 +3,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import carrito from '../../assets/carrito.png';
 import { useCartContext } from '../context/CartContext';
 
-
-
 function Cart(){
   const {cantidadTotal} = useCartContext()
   return(

@@ -12,8 +12,6 @@ import CartContainer from './components/Carrito/CartContainer';
 function App() {
   return (
     <>
-      
-
       <BrowserRouter>
         <CartContextProvider>
           <Navegacion/>

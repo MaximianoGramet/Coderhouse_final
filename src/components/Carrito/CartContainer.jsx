@@ -1,5 +1,4 @@
   import { useState } from "react"
-  import ItemCount from "../Counter/ItemCount"
   import { useCartContext } from "../context/CartContext"
   import { addDoc, collection, getFirestore } from "firebase/firestore"
 
@@ -52,9 +51,6 @@
 
     }
 
-
-
-
     const handleOnChange = (evt) => {
       setDataForm({
         ...dataForm,
@@ -62,7 +58,6 @@
       })
     }
 
-  
     return (
       <>
       {id !== '' && <h3>SE ha generado le orden de compra: {id}</h3>}
@@ -72,8 +67,7 @@
             <img src={prod.imageUrl} className="w-25"/>
             {prod.name} - ${prod.price} - Cantidad: {prod.quantity}
             <button className="btn btn-danger" onClick={ () => eliminarProducto(prod.id) }> X </button>
-
-            
+     
         </div>)}
           <button onClick={deleteCart}>Vaciar Carrito</button>
           <h3>Precio total: {precioTotal()}</h3>

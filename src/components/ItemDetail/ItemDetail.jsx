@@ -2,7 +2,6 @@ import ItemCount from "../Counter/ItemCount"
 import { useCartContext } from "../context/CartContext"
 import { useState } from "react"
 
-
 const ItemDetail = ({product})=>{
     const [isCounter, setIsCounter] = useState(true)
     const {addProduct}  = useCartContext()
