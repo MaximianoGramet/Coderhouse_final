@@ -18,13 +18,6 @@ import { doc, getDoc, getFirestore } from "firebase/firestore"
 
     },[])
    
-//     useEffect(()=>{
-//         mFetch(Number(pid))
-//         .then(resp => setProduct(resp))
-//         .catch(err=> console.log(err))
-//     },[])
-
-
 
     return (
         <div className="d-flex justify-content-center">
